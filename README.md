@@ -64,3 +64,23 @@ The goal of this assignment is to create a **multipage website** that is fully d
      - The deployment process you followed.
 
 ---
+
+
+The project is a simple hotel website where one can pay for different food stuffs offered by the hotel. One can also book rooms in the hotel. 
+You can run the the website locally using chrome or any other web browser once you download it from GitHub.
+You can use the link below to access the website
+
+https://kode-god.github.io/safaricom-hook-final-project-and-deployment-week-8-Kode-god/
+
+I chose the layout since it can be supported by an device example a laptop, mobile phone or a tablet. The colours I used makes the website more appealing and more user friendly. 
+Some of the features implimented using javascript incldes ;
+   Cart Functionality which add items in the cart.
+   Search Functionality which filters menu items based on user input.
+   Lightbox dhich display imagess in a larger overlay.
+   Booking System	which validates and simulate room bookings.
+   Responsive Designs which adjusts layout dynamically based on screen size.
+   Event Handling	that handles user interactions like clicks and form submissions.
+   User Feedback	which provides alerts and dynamic updates to guide the user.
+
+The problem that i faced mostly was writting the javascript codes which seemed a little bit difficult. I overcame them by checking the correct javascript syntax and collaborating with a few friends
+The deployment process I followed was using Github pages.
