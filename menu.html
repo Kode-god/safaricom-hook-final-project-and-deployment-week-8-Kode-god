@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Hotel Sottovoche</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="menu-title">Sottovoche Menu</h1>
+
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search for food..." oninput="filterItems()">
+    </div>
+
+    <div class="menu-description">
+      <p>Our hotel provides a wide variety of dishes from Chinees cuisines to the local Kenyan cuisines like nyama
+        choma at very affordable prices. Hotel Sottovoche provides the best quality dishes in Kenya and Africa 
+        as a whole.   
+      </p>
+      <p>Enjoy your meal!!</p>
+    </div>
+
+    <div class="menu-items">
+      <div class="item" data-name="burger">
+        <img src="assets/burger.jpeg" alt="Burger">
+        <h3>Burger</h3>
+        <p>Ksh 100</p>
+        <button onclick="addToCart('Burger', 100)">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Shushi">
+        <img src="assets/shushi.jpeg" alt="Shushi">
+        <h3>Shushi</h3>
+        <p>Ksh 4100</p>
+        <button onclick="addToCart('Shushi', 4100)">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Choma">
+        <img src="assets/choma.jpeg" alt="Choma">
+        <h3>Choma</h3>
+        <p>Ksh 520</p>
+        <button onclick="addToCart('Choma', 520)">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Fish">
+        <img src="assets/fish.jpg" alt="Fish">
+        <h3>Fish</h3>
+        <p>Ksh 320</p>
+        <button onclick="addToCart('Fish', 320)">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Kienyeji">
+        <img src="assets/kienyeji.jpeg" alt="Kienyeji">
+        <h3>Kienyeji</h3>
+        <p>Ksh 270</p>
+        <button onclick="addToCart('Kienyeji', 270)">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Chapo">
+        <img src="assets/chapo.jpeg" alt="Chapo">
+        <h3>Chapo</h3>
+        <p>Ksh 20</p>
+        <button onclick="addToCart('Chapo', 20)">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Rice">
+        <img src="assets/rice.jpeg" alt="Rice">
+        <h3>Rice</h3>
+        <p>Ksh 90</p>
+        <button onclick="addToCart('Rice', 90)">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Chicken">
+        <img src="assets/chicken.jpeg" alt="Chicken">
+        <h3>Chicken</h3>
+        <p>Ksh430</p>
+        <button onclick="addToCart('Chicken', 430)">Add to Cart</button>
+      </div>
+      <!-- Add more items here later on -->
+    </div>
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: Ksh <span id="total">0</span></p>
+      <button onclick="proceedToPay()">Proceed to Pay</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hotel Sottovoche. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.Facebook.com" target="_blank">Facebook</a>
+      <a href="https://Twitter.com" target="_blank">Twitter</a>
+      <a href="https://Instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="scripts/carts.js"></script>
+</body>
+</html>

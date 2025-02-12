@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Hotel Sottovoche</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallary-main">
+    <h1>Sottovoche Gallery</h1>
+    <p>Our gallary consists of pictures about of various sections of our extremed hotel.
+       From the big swimming pool to the laxarious and spacious hotel lobby. The hotel offers deluxe rooms with balconies
+      which enales our guests to observe the beautiful scenary surrouding our hotel</p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="assets/lobby.jpeg" alt="Hotel Lobby" onclick="openLightbox('assets/assets/lobby.jpeg')">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/room.jpeg" alt="Deluxe Room" onclick="openLightbox('assets/assets/room.jpeg')">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/pool.jpeg" alt="Swimming Pool" onclick="openLightbox('assets/pool.jpeg')">
+      </div>
+      <!-- Add more gallery items here -->
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" class="lightbox-content">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hotel Sottovoche. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.Facebook.com" target="_blank">Facebook</a>
+      <a href="https://Twitter.com" target="_blank">Twitter</a>
+      <a href="https://Instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="scripts/gallery.js"></script>
+</body>
+</html>
